@@ -4,9 +4,9 @@ import { HomeView } from "@/views";
 </script>
 
 <template>
-    <app-layout>
-        <home-view />
-    </app-layout>
+  <app-layout>
+    <home-view />
+  </app-layout>
 </template>
 
 <style lang="scss">

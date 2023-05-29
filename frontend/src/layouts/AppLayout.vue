@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <app-header />
-        <slot />
-    </div>
+  <div>
+    <app-header />
+    <slot />
+  </div>
 </template>
 
 <script setup>
