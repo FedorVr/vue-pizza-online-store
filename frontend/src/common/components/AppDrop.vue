@@ -10,7 +10,6 @@ import { DATA_TRANSFER_PAYLOAD } from "@/common/constants";
 const emit = defineEmits(["drop"]);
 
 const onDrop = ({ dataTransfer }) => {
-  // console.log('<AppDrop>', dataTransfer.getData(DATA_TRANSFER_PAYLOAD));
   if (!dataTransfer) {
     return;
   }
