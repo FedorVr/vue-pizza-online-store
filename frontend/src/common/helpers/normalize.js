@@ -35,7 +35,7 @@ export const normalizeSize = (size) => {
 export const normalizeIngredients = (ingredient) => {
   return {
     ...ingredient,
-    value: ingredients[ingredient.id],
+    value: ingredients.find((item) => item.label === ingredient.name)?.value,
   };
 };
 
