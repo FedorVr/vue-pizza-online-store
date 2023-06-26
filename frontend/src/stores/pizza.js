@@ -86,8 +86,8 @@ export const usePizzaStore = defineStore("pizza", {
       );
 
       /*
-       * Добавляем ингредиент, если его нет, а количество больше 0
-       * Если ингредиента нет, а количество 0 или меньше, то ничего не делаем
+       * Add an ingredient if there is none, and the amount is greater than 0
+       * If there is no ingredient, and the amount is 0 or less, then do nothing
        */
       if (ingredientIdx === -1 && count > 0) {
         this.addIngredient(ingredientId);
@@ -96,7 +96,7 @@ export const usePizzaStore = defineStore("pizza", {
         return;
       }
 
-      /* Удаляем ингредиент, если количество 0 */
+      /* Remove the ingredient if the amount is 0 */
       if (count === 0) {
         this.ingredients.splice(ingredientIdx, 1);
         return;

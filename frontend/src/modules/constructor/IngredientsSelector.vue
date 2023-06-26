@@ -1,6 +1,6 @@
 <template>
   <div class="ingredients__filling">
-    <p>Начинка:</p>
+    <p>Stuffing:</p>
 
     <ul class="ingredients__list">
       <li

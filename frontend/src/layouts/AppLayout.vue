@@ -12,16 +12,16 @@ import AppLayoutDefault from "@/layouts/DefaultLayout.vue";
 const route = useRoute();
 const layout = shallowRef(null);
 
-// Наблюдаем за изменением маршрута
+// Observing the change in the route
 watch(
   () => route.meta,
   async (meta) => {
     try {
-      // Пробуем найти компонент из свойства meta и динамически импортировать его
+      // Let's try to find the component from the meta property and dynamically import it
       const component = await import(`./${meta.layout}.vue`);
       layout.value = component?.default || AppLayoutDefault;
     } catch (e) {
-      // Если компонент не найдет, добавляем шаблон по-умолчанию
+      // If the component is not found, add the default template
       layout.value = AppLayoutDefault;
     }
   }

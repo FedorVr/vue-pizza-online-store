@@ -1,7 +1,7 @@
 <template>
   <div class="content__dough">
     <div class="sheet">
-      <h2 class="title title--small sheet__title">Выберите тесто</h2>
+      <h2 class="title title--small sheet__title">Choose the dough</h2>
 
       <div class="sheet__content">
         <label
@@ -9,7 +9,7 @@
           :key="doughType.id"
           class="dough__input"
         >
-          <!--          если соблюдается условие doughType.value === modelValue, то будет активно-->
+          <!--          if doughType.value === modelValue is met, it will be active-->
           <input
             type="radio"
             name="dough"

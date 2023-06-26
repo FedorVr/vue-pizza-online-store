@@ -1,6 +1,6 @@
 <template>
   <div class="ingredients__sauce">
-    <p>Основной соус:</p>
+    <p>Main sauce:</p>
 
     <label
       v-for="sauceType in items"

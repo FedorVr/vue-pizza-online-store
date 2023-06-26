@@ -3,14 +3,14 @@
     <main class="content cart">
       <div class="container">
         <div class="cart__title">
-          <h1 class="title title--big">Корзина</h1>
+          <h1 class="title title--big">Basket</h1>
         </div>
 
         <div
           v-if="cartStore.pizzasExtended.length === 0"
           class="sheet cart__empty"
         >
-          <p>В корзине нет ни одного товара</p>
+          <p>There is not a single product in the cart</p>
         </div>
 
         <ul v-else class="cart-list sheet">
@@ -30,10 +30,10 @@
               <div class="product__text">
                 <h2>{{ pizza.name }}</h2>
                 <ul>
-                  <li>{{ pizza.size.name }}, {{ pizza.dough.name }} тесто</li>
+                  <li>{{ pizza.size.name }}, {{ pizza.dough.name }} dough</li>
                   <li>Соус: {{ pizza.sauce.name }}</li>
                   <li>
-                    Начинка:
+                    Stuffing:
                     {{ pizza.ingredients.map((i) => i.name).join(", ") }}
                   </li>
                 </ul>
@@ -57,7 +57,7 @@
                 class="cart-list__edit"
                 @click="editPizza(i)"
               >
-                Изменить
+                Change
               </button>
             </div>
           </li>
@@ -99,14 +99,14 @@
         <div class="cart__form">
           <div class="cart-form">
             <label class="cart-form__select">
-              <span class="cart-form__label">Получение заказа:</span>
+              <span class="cart-form__label">Receiving an order:</span>
 
               <select
                 name="test"
                 class="select"
                 @input="deliveryOption = $event.target.value"
               >
-                <option :value="-1">Новый адрес</option>
+                <option :value="-1">New address</option>
                 <option
                   v-for="address in profileStore.addresses"
                   :key="address.id"
@@ -118,7 +118,7 @@
             </label>
 
             <label class="input input--big-label">
-              <span>Контактный телефон:</span>
+              <span>Contact phone number:</span>
               <input
                 v-model="phone"
                 type="text"
@@ -128,25 +128,25 @@
             </label>
 
             <div v-if="isNewAddress" class="cart-form__address">
-              <span class="cart-form__label">Новый адрес:</span>
+              <span class="cart-form__label">New address:</span>
 
               <div class="cart-form__input">
                 <label class="input">
-                  <span>Улица*</span>
+                  <span>Street*</span>
                   <input v-model="street" required type="text" name="street" />
                 </label>
               </div>
 
               <div class="cart-form__input cart-form__input--small">
                 <label class="input">
-                  <span>Дом*</span>
+                  <span>House*</span>
                   <input v-model="building" required type="text" name="house" />
                 </label>
               </div>
 
               <div class="cart-form__input cart-form__input--small">
                 <label class="input">
-                  <span>Квартира</span>
+                  <span>Apartment</span>
                   <input v-model="flat" type="text" name="apartment" />
                 </label>
               </div>
@@ -162,19 +162,19 @@
           :to="{ name: 'home' }"
           class="button button--border button--arrow"
         >
-          Хочу еще одну
+          I want another one
         </router-link>
       </div>
       <p class="footer__text">
-        Перейти к конструктору<br />чтоб собрать ещё одну пиццу
+        Go to the constructor<br />to collect another pizza
       </p>
       <div class="footer__price">
-        <b>Итого: {{ cartStore.total }} ₽</b>
+        <b>Total: {{ cartStore.total }} ₽</b>
       </div>
 
       <div class="footer__submit">
         <button type="submit" class="button" :disabled="cartStore.total === 0">
-          Оформить заказ
+          Place an order
         </button>
       </div>
     </section>

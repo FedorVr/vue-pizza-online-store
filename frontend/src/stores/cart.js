@@ -85,8 +85,8 @@ export const useCartStore = defineStore("cart", {
       const miscIdx = this.misc.findIndex((item) => item.miscId === miscId);
 
       /*
-       * Добавляем ингредиент, если его нет, а количество больше 0
-       * Если ингредиента нет, а количество 0 или меньше, то ничего не делаем
+       * Add an ingredient if there is none, and the amount is greater than 0 If there is no ingredient,
+       * and the amount is 0 or less, then do nothing
        */
       if (miscIdx === -1 && count > 0) {
         this.misc.push({
@@ -98,7 +98,7 @@ export const useCartStore = defineStore("cart", {
         return;
       }
 
-      /* Удаляем ингредиент, если количество 0 */
+      /* Remove the ingredient if the amount 0 */
       if (count === 0) {
         this.misc.splice(miscIdx, 1);
         return;

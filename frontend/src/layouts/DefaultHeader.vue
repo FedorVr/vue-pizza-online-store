@@ -28,10 +28,10 @@
         class="header__logout"
         @click="logout"
       >
-        <span>Выйти</span>
+        <span>Logout</span>
       </div>
       <router-link v-else :to="{ name: 'login' }" class="header__logout">
-        <span>Войти</span>
+        <span>Login</span>
       </router-link>
     </div>
   </header>

@@ -7,59 +7,59 @@
     <div class="address-form__wrapper">
       <div class="address-form__input">
         <label class="input">
-          <span>Название адреса*</span>
+          <span>Address name*</span>
           <input
             v-model="name"
             type="text"
             name="addr-name"
-            placeholder="Введите название адреса"
+            placeholder="Enter the name of the address"
             required
           />
         </label>
       </div>
       <div class="address-form__input address-form__input--size--normal">
         <label class="input">
-          <span>Улица*</span>
+          <span>Street*</span>
           <input
             v-model="street"
             type="text"
             name="addr-street"
-            placeholder="Введите название улицы"
+            placeholder="Enter the name of the street"
             required
           />
         </label>
       </div>
       <div class="address-form__input address-form__input--size--small">
         <label class="input">
-          <span>Дом*</span>
+          <span>House*</span>
           <input
             v-model="building"
             type="text"
             name="addr-house"
-            placeholder="Введите номер дома"
+            placeholder="Enter the house number"
             required
           />
         </label>
       </div>
       <div class="address-form__input address-form__input--size--small">
         <label class="input">
-          <span>Квартира</span>
+          <span>Apartment</span>
           <input
             v-model="flat"
             type="text"
             name="addr-apartment"
-            placeholder="Введите № квартиры"
+            placeholder="Enter № of the apartment"
           />
         </label>
       </div>
       <div class="address-form__input">
         <label class="input">
-          <span>Комментарий</span>
+          <span>Comment</span>
           <input
             v-model="comment"
             type="text"
             name="addr-comment"
-            placeholder="Введите комментарий"
+            placeholder="Enter a comment"
           />
         </label>
       </div>
@@ -71,9 +71,9 @@
         class="button button--transparent"
         @click="emit('delete')"
       >
-        Удалить
+        Delete
       </button>
-      <button type="submit" class="button">Сохранить</button>
+      <button type="submit" class="button">Save</button>
     </div>
   </form>
 </template>

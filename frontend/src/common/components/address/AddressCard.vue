@@ -4,7 +4,7 @@
       <b>{{ address.name }}</b>
       <div class="address-form__edit">
         <button type="button" class="icon" @click="editMode = true">
-          <span class="visually-hidden"> Изменить адрес </span>
+          <span class="visually-hidden"> Change address </span>
         </button>
       </div>
     </div>

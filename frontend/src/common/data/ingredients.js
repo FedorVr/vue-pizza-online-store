@@ -1,55 +1,55 @@
 export default [
   {
     value: "mushrooms",
-    label: "Грибы",
+    label: "Mushrooms",
   },
   {
     value: "cheddar",
-    label: "Чеддер",
+    label: "Cheddar",
   },
   {
     value: "tomatoes",
-    label: "Томаты",
+    label: "Tomatoes",
   },
   {
     value: "salmon",
-    label: "Лосось",
+    label: "Salmon",
   },
   {
     value: "ham",
-    label: "Ветчина",
+    label: "Ham",
   },
   {
     value: "mozzarella",
-    label: "Моцарелла",
+    label: "Mozzarella",
   },
   {
     value: "bacon",
-    label: "Бекон",
+    label: "Bacon",
   },
   {
     value: "parmesan",
-    label: "Пармезан",
+    label: "Parmesan",
   },
   {
     value: "ananas",
-    label: "Ананас",
+    label: "Ananas",
   },
   {
     value: "jalapeno",
-    label: "Халапеньо",
+    label: "Jalapeno",
   },
   {
     value: "salami",
-    label: "Салями",
+    label: "Salami",
   },
   {
     value: "chile",
-    label: "Чили",
+    label: "Chile",
   },
   {
     value: "blue_cheese",
-    label: "Блю чиз",
+    label: "Blue cheese",
   },
   {
     value: "olives",
@@ -57,6 +57,6 @@ export default [
   },
   {
     value: "onion",
-    label: "Лук",
+    label: "Onion",
   },
 ];

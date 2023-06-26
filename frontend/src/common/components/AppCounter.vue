@@ -6,7 +6,7 @@
       :disabled="value === min"
       @click="emit('input', value - 1)"
     >
-      <span class="visually-hidden">Меньше</span>
+      <span class="visually-hidden">Less</span>
     </button>
     <input
       type="text"
@@ -22,7 +22,7 @@
       :disabled="value === max"
       @click="emit('input', value + 1)"
     >
-      <span class="visually-hidden">Больше</span>
+      <span class="visually-hidden">More</span>
     </button>
   </div>
 </template>
