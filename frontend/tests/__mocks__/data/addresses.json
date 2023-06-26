@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Мой адрес",
-    "street": "Невский пр.",
+    "name": "My address",
+    "street": "Nevsky pr.",
     "building": "22",
     "flat": "46",
-    "comment": "Позвоните, пожалуйста, от проходной",
+    "comment": "Please call me",
     "userId": "1"
   }
 ]

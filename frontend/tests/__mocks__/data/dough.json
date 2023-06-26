@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "name": "Тонкое",
+    "name": "Thin",
     "image": "dough-light.svg",
-    "description": "Из твердых сортов пшеницы",
+    "description": "From durum wheat varieties",
     "price": 300
   },
   {
     "id": 2,
-    "name": "Толстое",
+    "name": "Thick",
     "image": "dough-large.svg",
-    "description": "Из твердых сортов пшеницы",
+    "description": "From durum wheat",
     "price": 300
   }
 ]

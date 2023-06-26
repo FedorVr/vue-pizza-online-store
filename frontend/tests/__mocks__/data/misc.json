@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "name": "Coca-Cola 0,5 литра",
+    "name": "Coca-Cola 0,5 liters",
     "image": "cola",
     "price": 56
   },
   {
     "id": 2,
-    "name": "Острый соус",
+    "name": "Spicy sauce",
     "image": "sauce",
     "price": 30
   },
   {
     "id": 3,
-    "name": "Картошка из печи",
+    "name": "Potatoes from the oven",
     "image": "potato",
     "price": 56
   }

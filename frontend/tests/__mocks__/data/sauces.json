@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Томатный",
+    "name": "Tomato",
     "price": 50
   },
   {
     "id": 2,
-    "name": "Сливочный",
+    "name": "Creamy",
     "price": 50
   }
 ]
