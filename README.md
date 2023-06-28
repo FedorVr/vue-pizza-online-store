@@ -1,5 +1,13 @@
 # «VuePizza Project»
 
+___
+
+![Illustration for the project](./presentation/main.png)
+![Illustration for the project](./presentation/basket.png)
+![Illustration for the project](./presentation/history.png)
+![Illustration for the project](./presentation/order.png)
+![Illustration for the project](./presentation/login.png)
+
 ---
 
 ## Requirements

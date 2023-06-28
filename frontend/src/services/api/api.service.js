@@ -8,6 +8,7 @@ class ApiError extends Error {
 }
 
 export class ApiService {
+  // return api error
   _getError(e) {
     if (e instanceof AxiosError) {
       return new ApiError(
@@ -52,6 +53,8 @@ export class ApiService {
       }
     };
   }
+
+  // () at the end of the line calls the returned function, which makes a GET request to the specified URL.
 
   $get(url) {
     return this._wrapper1(axios.get, url)();
